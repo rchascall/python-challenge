@@ -39,6 +39,7 @@ with open(election_data_csv_path) as csv_file:
             candidate_count_3 = candidate_count_3 + 1
             total_votes = total_votes + 1
 
+# Calculate Winner
 if candidate_count_1 > candidate_count_2 and candidate_count_1 > candidate_count_3:
     winning_candidate = candidate_1
 elif candidate_count_2 > candidate_count_3:
